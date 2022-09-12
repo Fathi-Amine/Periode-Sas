@@ -2,24 +2,27 @@
 #include <stdlib.h>
  int main()
  {
-    int a, b;
-    printf("Enter the first value ; \n");
-    scanf("%d", &a);
-    printf("Enter the second value ; \n");
-    scanf("%d", &b);
+    char nom [127], prenom[127], sexe [127];
+     int age , number ;
+     char prenom1;
+     printf(" enter your name : \n");
+     scanf("%s", &nom);
+     printf("enter your last name : \n");
+     scanf("%c",&prenom1);
+     scanf("%[^\n]" ,prenom);
 
-    double aPlusb, aMinusb, aTimesb, aDivbyb, aQuosb;
+     printf("enter your sexe : \n");
+     scanf("%s", &sexe);
+     printf("enter your age : \n");
+     scanf("%d", &age);
+     printf("enter your number : \n");
+     scanf("%d" , &number);
+     printf(" nom : %s", nom);
+     printf("prenom : %s" ,prenom);
 
-    aPlusb = a + b;
-    aMinusb = a - b;
-    aTimesb = a * b;
-    aDivbyb = a / b;
-    aQuosb = a % b;
 
-    printf("a + b = %lf", aPlusb);
-    printf("a - b = %lf", aMinusb);
-    printf("a * b = %lf", aTimesb);
-    printf("a / b = %lf", aDivbyb);
-    printf("a % b = %lf", aQuosb);
+    printf("sexe : %s" , &sexe);
+    printf("age : %d" ,age);
+    printf("number : %d" ,number);
     return 0;
  }
